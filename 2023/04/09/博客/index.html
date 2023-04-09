@@ -8,11 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="博客预览hanfeng-blog">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2023/04/09/%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="博客预览hanfeng-blog">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-04-09T06:07:59.596Z">
+<meta property="article:modified_time" content="2023-04-09T06:09:09.138Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,152 +154,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Java学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Java学习"><a href="#Java学习" class="headerlink" title="Java学习"></a>Java学习</h1><h2 id="2023年2月17日-4月2日："><a href="#2023年2月17日-4月2日：" class="headerlink" title="2023年2月17日-4月2日："></a>2023年2月17日-4月2日：</h2><h3 id="1-前言："><a href="#1-前言：" class="headerlink" title="1. 前言："></a>1. 前言：</h3><p>花了俩个月深入学习了Java， 有C语言基础的我感觉Java上手很快，话不多说，直接上总结</p>
-<h3 id="2-Java开发工具"><a href="#2-Java开发工具" class="headerlink" title="2. Java开发工具"></a>2. Java开发工具</h3><p><strong>javac</strong>： java编辑器<br><strong>java</strong>： java解释器<br><strong>jdb</strong>： java调试器<br><strong>javap</strong>： 主要用于反编译<br><strong>javadoc</strong>：文档生成器  </p>
-<h3 id="3-cmd命令"><a href="#3-cmd命令" class="headerlink" title="3. cmd命令"></a>3. cmd命令</h3><ul>
-<li><strong>E:</strong> ：切换盘符</li>
-<li><strong>dir</strong> ：显示文件</li>
-<li><strong>cd</strong> ：进入</li>
-<li><strong>cd..</strong> ：后退</li>
-<li><strong>cd\目录\目录</strong>： 多层进入</li>
-<li><strong>cls</strong> ： 清空界面</li>
-<li><strong>exit</strong> ：退出</li>
-</ul>
-<h3 id="4-java工具Notepad"><a href="#4-java工具Notepad" class="headerlink" title="4. java工具Notepad"></a>4. java工具Notepad</h3><p>配置notepad：设置—首选项—新建—window，java，ANSI</p>
-<h3 id="5-变量命名默认规则"><a href="#5-变量命名默认规则" class="headerlink" title="5. 变量命名默认规则"></a>5. 变量命名默认规则</h3><table>
-<thead>
-<tr>
-<th align="center">名称</th>
-<th align="center">命名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">接口和类名</td>
-<td align="center">首字母大写</td>
-</tr>
-<tr>
-<td align="center">方法名和变量名</td>
-<td align="center">首个字母小写，其余大写</td>
-</tr>
-<tr>
-<td align="center">常量名</td>
-<td align="center">全大写</td>
-</tr>
-<tr>
-<td align="center">包</td>
-<td align="center">小写</td>
-</tr>
-</tbody></table>
-<h3 id="6-导包类（这里Scanner为例子）"><a href="#6-导包类（这里Scanner为例子）" class="headerlink" title="6. 导包类（这里Scanner为例子）"></a>6. 导包类（这里Scanner为例子）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line">Scanner 名 = new Scanner(System.in);</span><br><span class="line">int 变量 = 名.nextInt();  </span><br></pre></td></tr></table></figure>
-<h3 id="7-语法（与C类似，-由于是给自己看的，-只写不一样的）"><a href="#7-语法（与C类似，-由于是给自己看的，-只写不一样的）" class="headerlink" title="7. 语法（与C类似， 由于是给自己看的， 只写不一样的）"></a>7. 语法（与C类似， 由于是给自己看的， 只写不一样的）</h3><ul>
-<li>swich可以简化： case -&gt; {}</li>
-<li>数组定义 ： int[] arrey &#x3D; new int[]{}; or int arrey[] &#x3D; {};</li>
-<li>private: 只能在本类中访问（可以用this区别全局变量和局部变量）</li>
-</ul>
-<h3 id="8-构造器"><a href="#8-构造器" class="headerlink" title="8. 构造器"></a>8. 构造器</h3><p>构造方法：与类名相同，无返回值连void都没有，需要写无参构造和有参构造，系统默认有一个无参构造<br>构造代码块先于构造方法执行<br>静态代码块static{}随着类的加载而加载，只出现一次，一般用于数据初始化</p>
-<h3 id="9-继承"><a href="#9-继承" class="headerlink" title="9. 继承"></a>9. 继承</h3><p>java只能单继承不能多继承，但支持多层继承<br>object是祖宗类<br>this(本类)<br>super(父类)<br>重写（Override）和重载(overload)： 俩者参数列表区别<br>public&gt;protected&gt;(default)&gt;private</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class zi extends fu&#123;</span><br><span class="line">    //zi类选择重写fu类方法(抽象类必须重写)</span><br><span class="line">    //构造方法先fu后zi, super只能有一个且必须是第一个</span><br><span class="line">    //final变量为常量类不能被继承，方法不能被覆盖</span><br><span class="line">    //抽象类不能new,抽象方法所在的类必是抽象类</span><br><span class="line">    //必须用一个子类继承抽象父类</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="10-接口-interface"><a href="#10-接口-interface" class="headerlink" title="10. 接口(interface)"></a>10. 接口(interface)</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//实现接口</span><br><span class="line">class GameJFrame extends JFrame implements KeyListener, ActionListener&#123;&#125;</span><br><span class="line">public interface A &#123;</span><br><span class="line">    //接口默认方法</span><br><span class="line">    public default void method() &#123;</span><br><span class="line">        System.out.println(&quot;A&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    //抽象方法</span><br><span class="line">    public void actionPerformed(ActionEvent e);</span><br><span class="line">    //静态方法（只能通过接口名调用）</span><br><span class="line">    public static void show()&#123;</span><br><span class="line">        System.out.println(&quot;static&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    //私有方法</span><br><span class="line">    private (static) void method2()&#123;</span><br><span class="line">        //重复代码块</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">接口无静态代码块和构造方法</span><br><span class="line">一个类可以有多个接口，重名必须重写，调用接口.super.方法</span><br><span class="line">父类与接口方法冲突，优先父类</span><br></pre></td></tr></table></figure>
-<h3 id="11-多态"><a href="#11-多态" class="headerlink" title="11. 多态"></a>11. 多态</h3><p>多态成员方法：编译看左边，运行看右边<br>多态成员变量：编译看左边，运行看左边</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Animal a = new Dog();</span><br><span class="line">if(a instanceof Dog)&#123;&#125;//比较类型(bool类型)</span><br><span class="line">if(a instanceof Dog d)&#123;&#125;//比较类型true则强转为d</span><br></pre></td></tr></table></figure>
-<h3 id="12-内部类"><a href="#12-内部类" class="headerlink" title="12. 内部类"></a>12. 内部类</h3><ul>
-<li>内部类<ol>
-<li>成员内部类</li>
-<li>静态内部类</li>
-<li>局部内部类</li>
-<li>匿名内部类<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Outer.Inner oi = new Outer().new Inner();</span><br><span class="line">//外部成员与内部成员重名</span><br><span class="line">Outer.this.变量</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-</ul>
-<h3 id="13-异常"><a href="#13-异常" class="headerlink" title="13. 异常"></a>13. 异常</h3><h5 id="Exception分为："><a href="#Exception分为：" class="headerlink" title="Exception分为："></a>Exception分为：</h5><ul>
-<li>运行时异常（RuntimeException）</li>
-<li>编译时异常</li>
-</ul>
-<h5 id="异常的作用："><a href="#异常的作用：" class="headerlink" title="异常的作用："></a>异常的作用：</h5><ul>
-<li>查询bug的关键参考信息 </li>
-<li>作为一种特殊返回值，以便通知调用者底层的执行情况</li>
-</ul>
-<h5 id="异常的处理"><a href="#异常的处理" class="headerlink" title="异常的处理"></a>异常的处理</h5><ul>
-<li>JVM默认处理<ul>
-<li>把异常的名称，原因，错误位置输出在控制台上</li>
-<li>后序代码停止执行</li>
-</ul>
-</li>
-<li>自己处理（捕获异常）  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">    <span class="comment">//可能出现异常的代码;</span></span><br><span class="line">    <span class="comment">//系统自动创建错误对象，然后拿到catch中对比</span></span><br><span class="line">&#125;<span class="keyword">catch</span>(异常类名 变量名)&#123;</span><br><span class="line">    <span class="comment">//异常处理的代码;</span></span><br><span class="line">    <span class="comment">//如果能接收及被捕获，则执行对应catch代码）</span></span><br><span class="line">    <span class="comment">//Throwtable的成员方法</span></span><br><span class="line">        <span class="comment">//public String getMessage(): 返回详细信息</span></span><br><span class="line">        <span class="comment">//public String toString(): 返回此可抛出的简短描述</span></span><br><span class="line">        <span class="comment">//public void printStackTrace():利用System.err.println打印红色</span></span><br><span class="line">&#125;<span class="keyword">finally</span>&#123;</span><br><span class="line">    <span class="comment">//无论是否出现异常，该代码块中代码都会执行</span></span><br><span class="line">    sout(balabala);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//可以让程序继续往下执行，不会停止</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li>如果try中没有遇到问题则正常执行</li>
-<li>如果try中多个问题则多个catch（父类异常写下面）否则默认JVM</li>
-<li>try中遇到问题try中后面的代码不运行</li>
-</ol>
-</li>
-<li>抛出处理<ul>
-<li>throws：方法开始时告诉使用者可能会出的异常(RuntimeException可不写)</li>
-<li>throw：方法中抛出异常（创建对象）</li>
-</ul>
-</li>
-</ul>
-<h5 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h5><ul>
-<li>定义类</li>
-<li>写继承关系</li>
-<li>空参构造</li>
-<li>带参构造</li>
-</ul>
-<h3 id="14-函数环节"><a href="#14-函数环节" class="headerlink" title="14. 函数环节"></a>14. 函数环节</h3><ul>
-<li>数组求长度： arrey.length;</li>
-<li>Math类(API文档)</li>
-<li>nextLine();单独讲一下， next()遇到空格就不会读取字符串了，但nextLine()只找回车<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">//返回类型 用法</span><br><span class="line">boolean a.equals(b)//比较字符串内容</span><br><span class="line">boolean a.equalsIgnoreCase(b);//忽略大小写比较</span><br><span class="line">char chaAt(int index);//根据索引返回字符</span><br><span class="line">int length();//返回长度</span><br><span class="line">String substring(int beginIndex, int endIndex);//截取（包头不包尾）</span><br><span class="line">String substring(int beginInde);//截取到末尾</span><br><span class="line">String replace(新， 旧);//替换</span><br><span class="line"></span><br><span class="line">//StringBuilder</span><br><span class="line">StringBuilder sb = new StringBuilder();</span><br><span class="line">sb.append(任意类型);//添加</span><br><span class="line">sb.reverse();//反转内容</span><br><span class="line">String toString();//转化为String</span><br><span class="line"></span><br><span class="line">//StringJoiner</span><br><span class="line">String arrey1 = &quot;你好&quot;;</span><br><span class="line">String arrey2 = &quot;朋友&quot;;</span><br><span class="line">StringJoiner a = new StringJoiner(&quot;,&quot;);</span><br><span class="line">StringJoiner a = new StringJoiner(&quot;,&quot;, &quot;[&quot;, &quot;]&quot;);</span><br><span class="line">a.add(arrey1);</span><br><span class="line">a.add(arrey2);</span><br><span class="line">sout(a);//你好,朋友</span><br><span class="line">sout(a);//[你好,朋友]</span><br><span class="line"></span><br><span class="line">//ArrayList(集合)(Byte, Short, Character, Integer, Long, Float, Double, Boolean)</span><br><span class="line">ArrayList&lt;String&gt; arrayList = new ArrayList&lt;String&gt;();</span><br><span class="line">arrayList.add(&quot;1&quot;);//添加</span><br><span class="line">arrayList.add(&quot;2&quot;);</span><br><span class="line">arrayList.remove(&quot;2&quot;);//删除</span><br><span class="line">System.out.println(arrayList);//[1]</span><br><span class="line">arrayList.add(&quot;3&quot;);</span><br><span class="line">System.out.println(arrayList.remove(1));//3，删除指定并返回被删除内容</span><br><span class="line">System.out.println(arrayList.set(0, &quot;4&quot;));//1，修改指定返回被修改内容</span><br><span class="line">System.out.println(arrayList.get(0));//4，获取</span><br><span class="line">System.out.println(arrayList.size());//1，长度</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="14-其他知识点（由于吃过亏，因此记录一下）"><a href="#14-其他知识点（由于吃过亏，因此记录一下）" class="headerlink" title="14.  其他知识点（由于吃过亏，因此记录一下）"></a>14.  其他知识点（由于吃过亏，因此记录一下）</h3><p>如何将字符数组，字节数组转化为字符串： String s &#x3D; new String(chs&#x2F;bytes)<br>&#x3D;&#x3D; 比较引用类型比较的是地址<br>static用于class类公用（与对象无关，类名调用）<br>float定义时数值后加F， long定义时数值后加L<br>main函数可以手动调用</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/04/09/Java%E5%AD%A6%E4%B9%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-博客" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
@@ -305,6 +164,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -312,16 +192,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/04/09/%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/04/09/%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2023/04/09/Java%E5%AD%A6%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/04/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -341,83 +289,14 @@
 
 
 
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/04/09/hello-world/">Hello World</a>
-    </h1>
   
 
-        
-        <a href="/2023/04/09/hello-world/" class="archive-article-date">
-  	<time datetime="2023-04-09T04:52:32.258Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-04-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/04/09/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
+  
 
   
+
   
 
 
@@ -440,8 +319,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
