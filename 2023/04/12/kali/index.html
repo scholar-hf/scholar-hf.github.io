@@ -16,7 +16,7 @@
 <meta property="og:description" content="web安全学习基础(学习C和Java的基础上)：">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-04-12T15:51:24.000Z">
-<meta property="article:modified_time" content="2023-04-16T04:04:29.119Z">
+<meta property="article:modified_time" content="2023-04-16T04:36:12.944Z">
 <meta property="article:author" content="韩枫">
 <meta name="twitter:card" content="summary">
   
@@ -372,17 +372,8 @@
 </ul>
 <p>  **2.预定义变量(了解)**： 系统提前定义的变量，存储许多需要用到的数据(预定义变量都是数组)</p>
 <blockquote>
+<p>$_ GET:获取所有表单以get方式提交的数据<br><br>$_ POST: ROST提交的数据都会保存在此<br><br>$_ REQUEST: GET和POST提交的都会保存<br><br>$GLOBALS: PHP 中所有的全局变量<br><br>$_ SERVER: 服务器信息<br><br>$_ SESSION: session 会话数据<br><br>$_ COOKIE: cookie 会话数据<br><br>$_ <em>ENV: 环境信息<br><br>$</em> FILES: 用户上传的文件信息</p>
 </blockquote>
-<pre><code>  $_ GET:获取所有表单以get方式提交的数据。
-  $_ POST: ROST提交的数据都会保存在此。
-  $_ REQUEST: GET和POST提交的都会保存。
-  $GLOBALS: PHP 中所有的全局变量
-  $_ SERVER: 服务器信息。
-  $_ SESSION: session 会话数据。
-  $_ COOKIE: cookie 会话数据。
-  $_ _ENV: 环境信息。
-  $_ FILES: 用户上传的文件信息
-</code></pre>
   <br>
 
 <p>  <strong>3.可变变量:</strong></p>
@@ -402,34 +393,22 @@
      </li>
 <li><h4 id="数据类型："><a href="#数据类型：" class="headerlink" title="数据类型："></a>数据类型：</h4><p>  <strong>1. 简单(基本)数据类型: 4个小类</strong></p>
 <blockquote>
+<p>整型: int&#x2F;integer<br><br>浮点型: float&#x2F;double<br><br>字符串型: string<br><br>布尔类型: bool&#x2F;boolean<br></p>
 </blockquote>
-<pre><code>  整型: int/integer
-  浮点型: float/double
-  字符串型: string
-  布尔类型: bool/boolean
-</code></pre>
 <p>  <strong>2. 复合数据类型: 2个小类</strong></p>
 <blockquote>
+<p>对象类型: object, 存放对象(面向对象)<br><br>数组类型: array，存储多个数据(一次性)</p>
 </blockquote>
-<pre><code>  对象类型: object, 存放对象(面向对象).
-  数组类型: array，存储多个数据(一次性)。
-</code></pre>
 <p>  <strong>3. 特殊数据类型: 2个小类</strong></p>
 <blockquote>
+<p>资源类型: resource, 存放资源数据(PHP 外部数据，如数据库、文件)<br><br>空类型: NULL， 只有一一个值就是NULL (不能运算)。</p>
 </blockquote>
-<pre><code>  资源类型: resource, 存放资源数据(PHP 外部数据，如数据库、文件)
-  空类型: NULL， 只有一一个值就是NULL (不能运算)。
-</code></pre>
 <p>  <strong>4. 数组</strong></p>
-<blockquote>
-</blockquote>
   <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cars</span>=<span class="keyword">array</span>(<span class="string">&quot;Volvo&quot;</span>,<span class="string">&quot;BMW&quot;</span>,<span class="string">&quot;Toyota&quot;</span>);<span class="comment">//array()用于创建数组</span></span><br><span class="line"><span class="variable">$age</span>=<span class="keyword">array</span>(<span class="string">&quot;Peter&quot;</span>=&gt;<span class="string">&quot;35&quot;</span>,<span class="string">&quot;Ben&quot;</span>=&gt;<span class="string">&quot;37&quot;</span>,<span class="string">&quot;Joe&quot;</span>=&gt;<span class="string">&quot;43&quot;</span>);<span class="comment">//关联数组,自己分配下标</span></span><br><span class="line"><span class="variable">$age</span>[<span class="string">&#x27;Peter&#x27;</span>]=<span class="string">&quot;35&quot;</span>;</span><br><span class="line"><span class="variable">$age</span>[<span class="string">&#x27;Ben&#x27;</span>]=<span class="string">&quot;37&quot;</span>;</span><br><span class="line"><span class="variable">$age</span>[<span class="string">&#x27;Joe&#x27;</span>]=<span class="string">&quot;43&quot;</span>;</span><br><span class="line"><span class="comment">//遍历关联数组</span></span><br><span class="line"><span class="keyword">foreach</span>(<span class="variable">$age</span> <span class="keyword">as</span> <span class="variable">$x</span>=&gt;<span class="variable">$x_value</span>)&#123;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;Key=&quot;</span> . <span class="variable">$x</span> . <span class="string">&quot;, Value=&quot;</span> . <span class="variable">$x_value</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>  <strong>5. 对象</strong></p>
   <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span></span>&#123;</span><br><span class="line"> <span class="keyword">var</span> <span class="variable">$color</span>;</span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"><span class="variable">$color</span>=<span class="string">&quot;green&quot;</span></span>) </span>&#123;</span><br><span class="line">   <span class="variable language_">$this</span>-&gt;color = <span class="variable">$color</span>;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">what_color</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="variable language_">$this</span>-&gt;color;</span><br><span class="line"> &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 <p>  <strong>6. var_dump()函数:</strong></p>
-<blockquote>
-</blockquote>
   <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="variable">$x</span> = <span class="number">5985</span>;</span><br><span class="line"><span class="title function_ invoke__">var_dump</span>(<span class="variable">$x</span>);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;&quot;</span>;<span class="comment">//int(5985)</span></span><br><span class="line"><span class="variable">$x</span> = -<span class="number">345</span>; <span class="comment">// 负数 </span></span><br><span class="line"><span class="title function_ invoke__">var_dump</span>(<span class="variable">$x</span>);<span class="comment">//int(-345)</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;&quot;</span>; </span><br><span class="line"><span class="variable">$x</span> = <span class="number">0x8C</span>; <span class="comment">// 十六进制数</span></span><br><span class="line"><span class="title function_ invoke__">var_dump</span>(<span class="variable">$x</span>);<span class="comment">//int(140)</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="variable">$x</span> = <span class="number">047</span>; <span class="comment">// 八进制数</span></span><br><span class="line"><span class="title function_ invoke__">var_dump</span>(<span class="variable">$x</span>);<span class="comment">//int(39)</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 
   <br>
@@ -485,19 +464,7 @@
 <li><h4 id="函数-见名知意"><a href="#函数-见名知意" class="headerlink" title="函数(见名知意)"></a>函数(见名知意)</h4>  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">echo</span> <span class="title function_ invoke__">strlen</span>(<span class="string">&quot;Hello world!&quot;</span>);<span class="comment">//12字符串长度</span></span><br><span class="line"><span class="keyword">echo</span> <span class="title function_ invoke__">strpos</span>(<span class="string">&quot;Hello world!&quot;</span>,<span class="string">&quot;world&quot;</span>);<span class="comment">//6寻字符串</span></span><br><span class="line"><span class="variable">$cars</span>=<span class="keyword">array</span>(<span class="string">&quot;Volvo&quot;</span>,<span class="string">&quot;BMW&quot;</span>,<span class="string">&quot;Toyota&quot;</span>);<span class="comment">//array()用于创建数组</span></span><br><span class="line"><span class="keyword">echo</span> <span class="title function_ invoke__">count</span>(<span class="variable">$cars</span>);<span class="comment">//3数组长度</span></span><br><span class="line"><span class="title function_ invoke__">rsort</span>()<span class="comment">//对数组进行降序排列</span></span><br><span class="line"><span class="title function_ invoke__">asort</span>()<span class="comment">//根据关联数组的值，对数组进行升序排列</span></span><br><span class="line"><span class="title function_ invoke__">ksort</span>()<span class="comment">//根据关联数组的键，对数组进行升序排列</span></span><br><span class="line"><span class="title function_ invoke__">arsort</span>()<span class="comment">//根据关联数组的值，对数组进行降序排列</span></span><br><span class="line"><span class="title function_ invoke__">krsort</span>()<span class="comment">//根据关联数组的键，对数组进行降序排列</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
   <br>
 </li>
-<li><h4 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h4><pre><code>  foreach ($array as $value)
-  &#123;
-      要执行的代码;
-  &#125;
-  每进行一次循环，当前数组元素的值就会被赋值给 $value 变量（数组指针会逐一地移动），在进行下一次循环时，您将看到数组中的下一个值。
-  
-  foreach ($array as $key =&gt; $value)
-  &#123;
-      要执行代码;
-  &#125;
-  每一次循环，当前数组元素的键与值就都会被赋值给 $key 和 $value 变量（数字指针会逐一地移动），在进行下一次循环时，你将看到数组中的下一个键与值。
-</code></pre>
-</li>
+<li><h4 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h4>  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">foreach</span> (<span class="variable">$array</span> <span class="keyword">as</span> <span class="variable">$value</span>)</span><br><span class="line">&#123;</span><br><span class="line">   <span class="comment">//要执行的代码;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//每进行一次循环，当前数组元素的值就会被赋值给 $value 变量（数组指针会逐一地&gt; 动），在进行下一次循环时，您将看到数组中的下一个值</span></span><br><span class="line"><span class="keyword">foreach</span> (<span class="variable">$array</span> <span class="keyword">as</span> <span class="variable">$key</span> =&gt; <span class="variable">$value</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//要执行代码;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//每一次循环，当前数组元素的键与值就都会被赋值给 $key 和 $value 变量（数字指&gt; 会逐一地移动），在进行下一次循环时，你将看到数组中的下一个键与值&gt; </span></span><br></pre></td></tr></table></figure></li>
 </ul>
 <p>参考文献：<a target="_blank" rel="noopener" href="https://www.runoob.com/">菜鸟教程</a></p>
 
